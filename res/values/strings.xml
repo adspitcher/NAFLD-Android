@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NEW_NAFLD</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_continue">Continue</string>
+    <string name="text_version">Version 1.0.0</string>
+    
+    <string name="cd_image">Image</string>
+    <string name="text_splash_heading">Non-alcoholic Fatty Liver Disease and Metabolic Syndrome</string>
+    <string name="text_username">username</string>
+    <string name="text_password">password</string>
+    <string name="text_signin">LOGIN</string>
+    <string name="text_termsconditions">Terms &amp; Conditions</string>
+    <string name="text_nafldms">NAFLD &amp; MS</string>
+    <string name="text_notices">Notices</string>
+    <string name="text_dummy">Dummy</string>
+    <string name="text_publication">No part of this publication may be reproduced or transmitted in any form or by any means, electronic or mechanical, including
+photocopying, recording, or any information storage and retrieval system, without permission in writing from the Publisher.</string>
+	<string name="text_notices_details">Knowledge and best practice in this field are constantly changing. As new research and experience broaden our understanding, changes in research methods, professional practices, or medical treatment may become necessary.
+	    \n\nPractitioners and researchers must always rely on their own experience and knowledge in evaluating and using any information, methods, compounds, or experiments described herein. In using such information or methods they should be mindful of their own safety and the safety of others, including parties for whom they have a professional responsibility.
+\n\nWith respect to any drug or pharmaceutical products identified, readers are advised to check the most current information provided (i) on procedures featured or (ii) by the manufacturer of each product to be administered, to verify the recommended dose or formula, the method and duration of administration, and contraindications. It is the responsibility of practitioners, relying on their own experience and knowledge of their patients, to make diagnoses, to determine dosages and the best treatment for each individual patient, and to take all appropriate safety precautions.
+\n\nTo the fullest extent of the law, neither the Publisher nor the authors, contributors, or editors, assume any liability for any injury and/or damage to persons or property as a manner of products liability, negligence or otherwise, or from any use or operation of any methods, products, instructions, or ideas contained in the material herein.
+\n\nAlthough all advertising material is expected to conform to ethical (medical) standards, inclusion in this publication does not constitute a guarantee or endorsement of the quality or value of such product or of the claims made of it by its manufacturer.
+\n\n<b>Please consult full prescribing information before issuing prescription for any product mentioned in this publication.</b></string>
+
+	<string-array name="tabs_array">
+    	<item>Information</item>
+  		<item>NAFLD&amp;ms</item>
+  		<item>Algorithms</item>
+  		<item>Drugs</item>
+  		<item>Clinical Trials</item>
+  		<item>Appendix</item>
+  		<item>Case Studies</item>
+  	</string-array>
+  	
+    <string-array name="informations_array">
+    	<item>Copyright</item>
+  		<item>Authors</item>
+  		<item>Societies</item>
+  	</string-array>
+  	
+    <string-array name="drugs_array">
+    	<item>Ursodeoxycholic Acid</item>
+  		<item>Metformin</item>
+  		<item>Thiazolidinediones</item>
+  		<item>Antioxidants</item>
+  		<item>Pentoxifylline</item>
+  	</string-array>
+  	
+    <string-array name="naflds_array">
+    	<item>NEED FOR THE POSITION PAPER ON NON-ALCOHOLIC FATTY LIVER DISEASE AND METABOLIC SYNDROME FROM INDIA</item>
+  		<item>DEFINITIONS AND SPECTRUM</item>
+  		<item>PATHOGENESIS OF NON-ALCOHOLIC FATTY LIVER DISEASE</item>
+  		<item>DIAGNOSIS OF NON-ALCOHOLIC FATTY LIVER DISEASE</item>
+  		<item>TREATMENT OF PATIENTS WITH NON-ALCOHOLIC FATTY LIVER DISEASE</item>
+  		<item>CONCLUSION</item>
+  	</string-array>
+  	
+    <string-array name="naflds_positionpaper_array">
+    	<item>Increasing Obesity, Hypertension, and Diabetes Mellitus</item>
+  		<item>Insulin Resistance and Other Risk Factors in Indians</item>
+  		<item>Non-alcoholic Fatty Liver Disease in India vis-a-vis Asian Data</item>
+  	</string-array>
+  	
+    <string-array name="naflds_definitions_array">
+    	<item>Non-alcoholic Fatty Liver Disease</item>
+  		<item>Spectrum of Non-alcoholic Fatty Liver Disease</item>
+  	</string-array>
+  	
+    <string-array name="naflds_pathogenesis_array">
+    	<item>Metabolic Syndrome</item>
+  		<item>Asia-Pacifi c/Indian Modifi cations for Metabolic Syndrome</item>
+  		<item>Association between Non-alcoholic Fatty Liver Disease and Metabolic Syndrome</item>
+  		<item>Insulin Resistance</item>
+  		<item>Other Pathogenic Mechanisms in Non-alcoholic Fatty Liver Disease</item>
+  	</string-array>
+  	
+    <string-array name="naflds_diagonosis_array">
+    	<item>Diagnosis of Non-cirrhotic Non-alcoholic Fatty Liver Disease</item>
+  		<item>Diagnosis of Non-alcoholic Fatty Liver Disease-related Cirrhosis and Hepatocellular Carcinoma</item>
+  		<item>Cardiology and Endocrine Evaluation</item>
+  	</string-array>
+  	
+    <string-array name="naflds_treatment_array">
+    	<item>Treatment of Non-cirrhotic Non-alcoholic Fatty Liver Disease</item>
+  		<item>Lifestyle Modifi cations/Weight Reduction</item>
+  		<item>Pharmacotherapy Therapy of Non-alcoholic Fatty Liver Disease</item>
+  		<item>Statin Use in Patients with Non-alcoholic Fatty Liver Disease</item>
+  		<item>Alcohol Use in Patients with Non-alcoholic Fatty Liver Disease</item>
+  		<item>Treatment of Non-alcoholic Fatty Liver Disease-related Cirrhosis and Hepatocellular Carcinoma</item>
+  		<item>Role of Cardiologists and Endocrinologists</item>
+  	</string-array>
+  	
+    <string-array name="h2_increasing_obesity">
+        <item>Over the years, increasing obesity, hypertension, and diabetes mellitus has also led to higher incidence and prevalence of NAFLD in India.</item>
+        <item>In India, the recent ICMR-INdiaDIABetes (ICMR-INDIAB) study reported the prevalence of DM (both known and newly diagnosed) in four regions of the country:10.4\u0025 in Tamil Nadu, 8.4\u0025 in Maharashtra, 5.3\u0025 in Jharkhand,and 13.6\u0025 in Chandigarh (Union Territory).</item>
+        <item>The overall number of people with DM in India in 2011 based on this study was estimated to be 62.4million, and this was confi rmed by the Diabetes Atlas(5th edition) of the International Diabetes Federation(IDF), which gave a fi gure of 61.3 million people with DM in India in the age group of 20–79 years.</item>
+        <item>Studies in India have shown an increasing trend in the prevalence of hypertension among urban adults: In Jaipur (1995), men 30\u0025 and women 33\u0025;in Mumbai (1999), men 44\u0025 and women 45\u0025; in Thiruvananthapuram (2000), men 31\u0025 and women 36\u0025; in Jaipur (2002), men 36\u0025 and women 37\u0025; in Chennai (2001), women 14\u0025.</item>
+        <item>The Chennai Urban Rural Epidemiology Study (CURES) reported a prevalence of 23.2\u0025 HTN among men and 17.1\u0025 among women in South India.</item>
+        <item>Hypertension is responsible for 57\u0025 of all stroke mortality and 24\u0025 of all coronary artery disease (CAD) mortality in India.</item>
+        <item>The prevalence of obesity diff ers mostly by location, gender, and socio-economic stratum.</item>
+        <item>Higher prevalence is seen in urban areas, more so in the higher socioeconomic stratum, and in women.</item>
+        <item>Even though higher prevalence and rapidly increasing rate of obesity are seen in urban areas, rural-based Asian-Indians are also showing a growing trend of obesity.</item>
+        <item>Increasing trend of overweight and obesity has been observed in children as well.</item>
+    </string-array>
+    
+    <string-array name="authors_name_array">
+    	<item>Dr. Ajay Duseja</item>
+  		<item>Dr. S.P. Singh</item>
+  		<item>Dr. Vivek Saraswat</item>
+  	</string-array>
+  	
+    <string-array name="authors_departments_array">
+    	<item>Department of Hepatology,</item>
+  		<item>Department of Gastroenterology,</item>
+  		<item>Department of Gastroenterology,</item>
+  	</string-array>
+  	
+    <string-array name="authors_qualification_array">
+    	<item>Postgraduate Institute of Medical Education and Research,</item>
+  		<item>S.C.B. Medical College,</item>
+  		<item>Sanjay Gandhi Postgraduate Institute of Medical Sciences,</item>
+  	</string-array>
+  	
+    <string-array name="authors_location_array">
+    	<item>Chandigarh</item>
+  		<item>Cuttack, Odisha</item>
+  		<item>Lucknow, Uttar Pradesh</item>
+  	</string-array>
+  	
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.nafld"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.Ab" android:logo="@drawable/splash">
+        <activity
+            android:name="com.app.nafld.views.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".views.LoginActivity"
+            android:label="@string/text_signin"></activity>
+        <activity android:name=".views.ConditionsActivity"
+            android:label="@string/text_termsconditions"></activity>
+        <activity android:name=".views.HomeActivity"
+            android:label="@string/text_nafldms"></activity>
+    </application>
+
+</manifest>
