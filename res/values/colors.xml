@@ -11,4 +11,6 @@
     <color name="offer_text_color">#FFBA31</color>
     <color name="brandstore_text_color">#496267</color>
     <color name="offer_item_background_color">#FFFFFF</color>
+    <color name="red_background_color">#5C1D26</color>
+    
 </resources>

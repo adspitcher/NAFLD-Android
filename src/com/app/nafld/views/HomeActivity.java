@@ -18,6 +18,8 @@ import android.support.v7.app.ActionBar.Tab;
 import android.support.v7.app.ActionBar.TabListener;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.View;
 
 public class HomeActivity extends ActionBarActivity implements TabListener, onItemClickListener{
@@ -70,6 +72,14 @@ public class HomeActivity extends ActionBarActivity implements TabListener, onIt
 			public void onPageScrollStateChanged(int arg0) {
 			}
 		});
+	}
+	
+	@Override
+	public boolean onCreateOptionsMenu(Menu menu) {
+		// Inflate the menu items for use in the action bar
+	    MenuInflater inflater = getMenuInflater();
+	    inflater.inflate(R.menu.menu_conditions, menu);
+	    return super.onCreateOptionsMenu(menu);
 	}
 
 	@Override

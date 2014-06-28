@@ -23,14 +23,14 @@ public class ConditionsActivity extends ActionBarActivity{
 		// Inflate the menu items for use in the action bar
 	    MenuInflater inflater = getMenuInflater();
 	    inflater.inflate(R.menu.menu_conditions, menu);
-	    return true;
+	    return super.onCreateOptionsMenu(menu);
 	}
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 		// Handle presses on the action bar items
 	    switch (item.getItemId()) {
-	        case R.id.action_continue:{
+	        case R.id.action_accept:{
 	        	Intent screenChangeIntent = null;
 				screenChangeIntent = new Intent(ConditionsActivity.this,
 						HomeActivity.class);

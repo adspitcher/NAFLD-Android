@@ -13,7 +13,6 @@
             android:id="@+id/textview_heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/items_vertical_margin"
             android:layout_marginLeft="@dimen/content_horizontal_margin"
             android:layout_marginRight="@dimen/content_horizontal_margin"
             android:layout_marginTop="@dimen/items_vertical_margin"
@@ -21,12 +20,29 @@
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:typeface="serif" />
 
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/cd_image"
+            android:src="@drawable/elsevierlogoblack" />
+        
+        <TextView
+            android:id="@+id/textview_copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_copyright"
+            android:layout_marginLeft="@dimen/content_horizontal_margin"
+            android:layout_marginRight="@dimen/content_horizontal_margin"
+            android:layout_marginTop="@dimen/items_vertical_margin"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:typeface="serif" />
+
         <TextView
             android:id="@+id/textview_publication"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_publication"
-            android:layout_marginBottom="@dimen/items_vertical_margin"
             android:layout_marginLeft="@dimen/content_horizontal_margin"
             android:layout_marginRight="@dimen/content_horizontal_margin"
             android:layout_marginTop="@dimen/items_vertical_margin"
@@ -54,7 +70,6 @@
                 android:id="@+id/textview_noticedetails"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/items_vertical_margin"
                 android:layout_marginLeft="@dimen/content_horizontal_margin"
                 android:layout_marginRight="@dimen/content_horizontal_margin"
                 android:layout_marginTop="@dimen/items_vertical_margin"

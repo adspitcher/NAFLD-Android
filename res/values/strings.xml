@@ -16,6 +16,7 @@
     <string name="text_nafldms">NAFLD &amp; MS</string>
     <string name="text_notices">Notices</string>
     <string name="text_dummy">Dummy</string>
+    <string name="text_copyright">© 2014 Reed Elsevier India Private Limited. All rights reserved.</string>
     <string name="text_publication">No part of this publication may be reproduced or transmitted in any form or by any means, electronic or mechanical, including
 photocopying, recording, or any information storage and retrieval system, without permission in writing from the Publisher.</string>
 	<string name="text_notices_details">Knowledge and best practice in this field are constantly changing. As new research and experience broaden our understanding, changes in research methods, professional practices, or medical treatment may become necessary.
@@ -129,5 +130,7 @@ photocopying, recording, or any information storage and retrieval system, withou
   		<item>Cuttack, Odisha</item>
   		<item>Lucknow, Uttar Pradesh</item>
   	</string-array>
+  	
+    <string name="action_accept">Accept</string>
   	
 </resources>
