@@ -1,9 +1,5 @@
 package com.app.nafld.fragments;
 
-import com.app.nafld.R;
-import com.app.nafld.adapters.FragmentsListViewAdapter;
-import com.app.nafld.constants.Constants;
-
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -13,6 +9,10 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
+
+import com.app.nafld.R;
+import com.app.nafld.adapters.FragmentsListViewAdapter;
+import com.app.nafld.constants.Constants;
 
 public class NAFLDnMSFragment extends Fragment{
 

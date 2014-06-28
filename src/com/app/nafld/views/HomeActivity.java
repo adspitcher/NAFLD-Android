@@ -1,16 +1,8 @@
 package com.app.nafld.views;
 
-import java.util.List;
-
-import com.app.nafld.R;
-import com.app.nafld.adapters.TabsPagerAdapter;
-import com.app.nafld.constants.Constants;
-import com.app.nafld.fragments.AuthorsFragment;
-import com.app.nafld.fragments.InformationFragment.onItemClickListener;
-
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
@@ -18,11 +10,16 @@ import android.support.v7.app.ActionBar.Tab;
 import android.support.v7.app.ActionBar.TabListener;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 
-public class HomeActivity extends ActionBarActivity implements TabListener, onItemClickListener{
+import com.app.nafld.R;
+import com.app.nafld.adapters.TabsPagerAdapter;
+import com.app.nafld.constants.Constants;
+import com.app.nafld.fragments.AlgorithmsFragment.onAlgorithmClickListener;
+import com.app.nafld.fragments.AuthorsFragment;
+import com.app.nafld.fragments.InformationFragment.onItemClickListener;
+
+public class HomeActivity extends ActionBarActivity implements TabListener, onItemClickListener, onAlgorithmClickListener{
 	
 	private ViewPager viewPager;
 	private TabsPagerAdapter mAdapter;
@@ -73,14 +70,6 @@ public class HomeActivity extends ActionBarActivity implements TabListener, onIt
 			}
 		});
 	}
-	
-	@Override
-	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu items for use in the action bar
-	    MenuInflater inflater = getMenuInflater();
-	    inflater.inflate(R.menu.menu_conditions, menu);
-	    return super.onCreateOptionsMenu(menu);
-	}
 
 	@Override
 	public void onTabReselected(Tab arg0, FragmentTransaction arg1) {
@@ -105,9 +94,7 @@ public class HomeActivity extends ActionBarActivity implements TabListener, onIt
 	public void onItemClicked(View view, int position) {
 		switch(position){
 		case Constants.INDEX_AUTHORS:{
-			Log.d("Home Activity", "inside authors click");
 			AuthorsFragment authorsFragment = new AuthorsFragment();
-			
 			FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
 
 			// Replace whatever is in the fragment_container view with this fragment,
@@ -121,6 +108,15 @@ public class HomeActivity extends ActionBarActivity implements TabListener, onIt
 		}
 		break;
 		}
+	}
+
+	@Override
+	public void onAlgoClicked(View view, int position) {
+		Intent screenChangeIntent = null;
+		screenChangeIntent = new Intent(HomeActivity.this,
+				AlgorithmActivity.class);
+		screenChangeIntent.putExtra("itemposition", position);
+		HomeActivity.this.startActivity(screenChangeIntent);
 	}
 
 }

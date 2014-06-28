@@ -131,6 +131,13 @@ photocopying, recording, or any information storage and retrieval system, withou
   		<item>Lucknow, Uttar Pradesh</item>
   	</string-array>
   	
+    <string-array name="algorithms_array">
+    	<item>Algorithm 1. Diagnostic work-up in patients with non-alcoholic fatty liver disease.</item>
+  		<item>Algorithm 2. Management algorithm in patients with non-alcoholic fatty liver disease.</item>
+  	</string-array>
+  	
     <string name="action_accept">Accept</string>
+    <string name="action_download">Download</string>
+    <string name="text_algorithm">Algorithm</string>
   	
 </resources>

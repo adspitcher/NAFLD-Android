@@ -2,6 +2,7 @@ package com.app.nafld.views;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -16,6 +17,9 @@ public class ConditionsActivity extends ActionBarActivity{
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_conditions);
+		
+		ActionBar actionBar = getSupportActionBar();
+	    actionBar.setDisplayHomeAsUpEnabled(true);
 	}
 	
 	@Override
@@ -35,6 +39,7 @@ public class ConditionsActivity extends ActionBarActivity{
 				screenChangeIntent = new Intent(ConditionsActivity.this,
 						HomeActivity.class);
 				ConditionsActivity.this.startActivity(screenChangeIntent);
+				ConditionsActivity.this.finish();
 	            return true;
 	        }
 	        default:

@@ -3,6 +3,7 @@ package com.app.nafld.fragments;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -56,7 +57,18 @@ public class InformationFragment extends Fragment{
 				case Constants.INDEX_COPYRIGHT:
 					break;
 				case Constants.INDEX_AUTHORS:{
-					activityCallback.onItemClicked(view, position);
+					//activityCallback.onItemClicked(view, position);
+					AuthorsFragment authorsFragment = new AuthorsFragment();
+					FragmentTransaction transaction = getFragmentManager().beginTransaction();
+
+					// Replace whatever is in the fragment_container view with this fragment,
+					// and add the transaction to the back stack so the user can navigate back
+					transaction.replace(R.id.container_information, authorsFragment);
+					transaction.addToBackStack(null);
+					transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+
+					// Commit the transaction
+					transaction.commit();
 				}
 					break;
 				case Constants.INDEX_SOCIETIES:

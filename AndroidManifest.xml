@@ -25,9 +25,19 @@
         <activity android:name=".views.LoginActivity"
             android:label="@string/text_signin"></activity>
         <activity android:name=".views.ConditionsActivity"
-            android:label="@string/text_termsconditions"></activity>
+            android:label="@string/text_termsconditions"
+            android:parentActivityName=".views.LoginActivity">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".views.LoginActivity" /></activity>
         <activity android:name=".views.HomeActivity"
             android:label="@string/text_nafldms"></activity>
+        <activity android:name=".views.AlgorithmActivity"
+            android:label="@string/text_algorithm"
+            android:parentActivityName=".views.HomeActivity">
+            <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".views.HomeActivity" /></activity>
     </application>
 
 </manifest>

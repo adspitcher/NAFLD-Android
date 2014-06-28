@@ -1,8 +1,5 @@
 package com.app.nafld.adapters;
 
-import com.app.nafld.R;
-import com.app.nafld.dataobjects.AuthorsItems;
-
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +7,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+
+import com.app.nafld.R;
+import com.app.nafld.dataobjects.AuthorsItems;
 
 public class AuthorsAdapter extends ArrayAdapter<AuthorsItems> {
 
@@ -32,7 +32,7 @@ public class AuthorsAdapter extends ArrayAdapter<AuthorsItems> {
 			holder = new ViewHolder();
 			LayoutInflater layout_inflator = ((Activity) context)
 					.getLayoutInflater();
-			convertView = layout_inflator.inflate(R.layout.listview_row_authors, null);
+			convertView = layout_inflator.inflate(R.layout.listview_row_authors, parent, false);
 			holder.dataCell_drname = (TextView) convertView
 					.findViewById(R.id.textview_drname);
 			holder.dataCell_department = (TextView) convertView.findViewById(R.id.textview_department);
