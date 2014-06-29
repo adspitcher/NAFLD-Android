@@ -42,20 +42,6 @@ public class InformationFragment extends Fragment{
 			Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		View view = inflater.inflate(R.layout.fragment_information, container, false);
-		
-		view.setFocusableInTouchMode(true);
-		view.requestFocus();
-		view.setOnKeyListener(new View.OnKeyListener() {
-		        @Override
-		        public boolean onKey(View v, int keyCode, KeyEvent event) {
-		            if( keyCode == KeyEvent.KEYCODE_BACK ) {
-		                getFragmentManager().popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE);
-		                return true;
-		            } else {
-		                return false;
-		            }
-		        }
-		    });
 
 		ListView listView_information_items = (ListView)view.findViewById(R.id.listview_information);
 
@@ -81,7 +67,7 @@ public class InformationFragment extends Fragment{
 					// and add the transaction to the back stack so the user can navigate back
 					transaction.replace(R.id.content_frame, authorsFragment);
 					transaction.addToBackStack(null);
-					transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+					transaction.setTransition(FragmentTransaction.TRANSIT_ENTER_MASK);
 
 					// Commit the transaction
 					transaction.commit();

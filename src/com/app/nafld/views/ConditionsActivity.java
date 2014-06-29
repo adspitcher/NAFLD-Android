@@ -38,6 +38,7 @@ public class ConditionsActivity extends ActionBarActivity{
 	        	Intent screenChangeIntent = null;
 				screenChangeIntent = new Intent(ConditionsActivity.this,
 						HomeActivity.class);
+				screenChangeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
 				ConditionsActivity.this.startActivity(screenChangeIntent);
 				ConditionsActivity.this.finish();
 	            return true;

@@ -2,6 +2,7 @@ package com.app.nafld.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,7 +13,6 @@ import android.widget.ListView;
 
 import com.app.nafld.R;
 import com.app.nafld.adapters.FragmentsListViewAdapter;
-import com.app.nafld.constants.Constants;
 
 public class NAFLDnMSFragment extends Fragment{
 
@@ -37,20 +37,17 @@ public class NAFLDnMSFragment extends Fragment{
 			public void onItemClick(AdapterView<?> arg0, View view, int position,
 					long arg3) {
 				Log.d("ListItem Clicked==", ">>>>>"+position);
-				switch(position){
-				case Constants.INDEX_POSITION_PAPER:
-					break;
-				case Constants.INDEX_POSITION_PATHOGENESIS:
-					break;
-				case Constants.INDEX_POSITION_DEFINITIONS:
-					break;
-				case Constants.INDEX_POSITION_DIAGNOSIS:
-					break;
-				case Constants.INDEX_POSITION_TREATMENT:
-					break;
-				case Constants.INDEX_POSITION_CONCLUSION:
-					break;
-				}
+				InnerFragment innerFragment = new InnerFragment(position);
+				FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
+
+				// Replace whatever is in the fragment_container view with this fragment,
+				// and add the transaction to the back stack so the user can navigate back
+				transaction.replace(R.id.content_frame_nafld, innerFragment);
+				transaction.addToBackStack(null);
+				transaction.setTransition(FragmentTransaction.TRANSIT_ENTER_MASK);
+
+				// Commit the transaction
+				transaction.commit();
 			}
 		});
 

@@ -1187,7 +1187,7 @@ containing a value of this type.
         public static final int venus=0x7f020098;
     }
     public static final class id {
-        public static final int action_accept=0x7f05005c;
+        public static final int action_accept=0x7f05005f;
         public static final int action_bar=0x7f05001c;
         public static final int action_bar_activity_content=0x7f050015;
         public static final int action_bar_container=0x7f05001b;
@@ -1196,12 +1196,12 @@ containing a value of this type.
         public static final int action_bar_subtitle=0x7f050023;
         public static final int action_bar_title=0x7f050022;
         public static final int action_context_bar=0x7f05001d;
-        public static final int action_download=0x7f05005b;
+        public static final int action_download=0x7f05005e;
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_search=0x7f05005d;
-        public static final int action_settings=0x7f05005a;
+        public static final int action_search=0x7f050060;
+        public static final int action_settings=0x7f05005d;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
         public static final int beginning=0x7f050011;
@@ -1210,8 +1210,10 @@ containing a value of this type.
         public static final int collapseActionView=0x7f05000d;
         public static final int container=0x7f050049;
         public static final int container_information=0x7f050050;
+        public static final int container_nafld=0x7f050054;
         public static final int content_frame=0x7f050051;
         public static final int content_frame_author=0x7f05004d;
+        public static final int content_frame_nafld=0x7f050055;
         public static final int default_activity_button=0x7f050028;
         public static final int dialog=0x7f05000e;
         public static final int disableHome=0x7f050008;
@@ -1238,7 +1240,8 @@ containing a value of this type.
         public static final int listview_authors=0x7f05004e;
         public static final int listview_drugs_mainitems=0x7f05004f;
         public static final int listview_information=0x7f050052;
-        public static final int listview_nafld_mainitems=0x7f050053;
+        public static final int listview_inneritems=0x7f050053;
+        public static final int listview_nafld_mainitems=0x7f050056;
         public static final int middle=0x7f050012;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
@@ -1264,17 +1267,17 @@ containing a value of this type.
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
-        public static final int textview_algorithm=0x7f050059;
+        public static final int textview_algorithm=0x7f05005c;
         public static final int textview_copyright=0x7f05003f;
-        public static final int textview_department=0x7f050056;
-        public static final int textview_drname=0x7f050055;
+        public static final int textview_department=0x7f050059;
+        public static final int textview_drname=0x7f050058;
         public static final int textview_heading=0x7f05003d;
-        public static final int textview_location=0x7f050058;
+        public static final int textview_location=0x7f05005b;
         public static final int textview_noticedetails=0x7f050042;
         public static final int textview_notices=0x7f050041;
         public static final int textview_publication=0x7f050040;
-        public static final int textview_qualification=0x7f050057;
-        public static final int textview_rowitem=0x7f050054;
+        public static final int textview_qualification=0x7f05005a;
+        public static final int textview_rowitem=0x7f050057;
         public static final int textview_version=0x7f05004b;
         public static final int title=0x7f05002b;
         public static final int top_action_bar=0x7f050020;
@@ -1346,13 +1349,14 @@ containing a value of this type.
         public static final int fragment_clinicaltrial=0x7f030023;
         public static final int fragment_drugs=0x7f030024;
         public static final int fragment_information=0x7f030025;
-        public static final int fragment_main=0x7f030026;
-        public static final int fragment_nafld=0x7f030027;
-        public static final int fragment_planet=0x7f030028;
-        public static final int listview_row=0x7f030029;
-        public static final int listview_row_authors=0x7f03002a;
-        public static final int listview_row_imagestring=0x7f03002b;
-        public static final int support_simple_spinner_dropdown_item=0x7f03002c;
+        public static final int fragment_inner=0x7f030026;
+        public static final int fragment_main=0x7f030027;
+        public static final int fragment_nafld=0x7f030028;
+        public static final int fragment_planet=0x7f030029;
+        public static final int listview_row=0x7f03002a;
+        public static final int listview_row_authors=0x7f03002b;
+        public static final int listview_row_imagestring=0x7f03002c;
+        public static final int support_simple_spinner_dropdown_item=0x7f03002d;
     }
     public static final class menu {
         public static final int main=0x7f0d0000;

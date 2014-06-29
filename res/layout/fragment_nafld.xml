@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container_nafld"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
-    <ListView
-        android:id="@+id/listview_nafld_mainitems"
+    <FrameLayout
+        android:id="@+id/content_frame_nafld"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawSelectorOnTop="true" >
+        android:layout_height="wrap_content" 
+        android:background="@color/white_background_color">
 
-    </ListView>
+        <ListView
+            android:id="@+id/listview_nafld_mainitems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_background_color"
+            android:drawSelectorOnTop="true" >
+
+        </ListView>
+    </FrameLayout>
 
 </LinearLayout>
