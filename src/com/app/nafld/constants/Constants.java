@@ -14,5 +14,9 @@ public class Constants {
 	public static final int INDEX_SOCIETIES = 2;
 	
 	public static final int INDEX_SOCIETIES_ARRAY = 21;
+	
+	public static final int INDEX_POSITION_PAPER_DETAIL_1 = 11;
+	public static final int INDEX_POSITION_PAPER_DETAIL_2 = 12;
+	public static final int INDEX_POSITION_PAPER_DETAIL_3 = 13;
 
 }

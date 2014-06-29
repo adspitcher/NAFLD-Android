@@ -3,10 +3,13 @@ package com.app.nafld.fragments;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 
 import com.app.nafld.R;
@@ -15,11 +18,11 @@ import com.app.nafld.constants.Constants;
 
 public class InnerFragment extends Fragment {
 
-	private int position;
+	private int innerposition;
 
 	public InnerFragment(int position) {
 		super();
-		this.position = position;
+		this.innerposition = position;
 	}
 
 	@Override
@@ -47,7 +50,7 @@ public class InnerFragment extends Fragment {
 
 		String[] items = null;
 
-		switch (position) {
+		switch (innerposition) {
 		case Constants.INDEX_POSITION_PAPER: {
 			items = view.getResources().getStringArray(
 					R.array.naflds_positionpaper_array);
@@ -87,6 +90,31 @@ public class InnerFragment extends Fragment {
 		FragmentsListViewAdapter adapter = new FragmentsListViewAdapter(
 				view.getContext(), R.layout.fragment_inner, items);
 		listView_items.setAdapter(adapter);
+
+		listView_items.setOnItemClickListener(new OnItemClickListener() {
+
+			@Override
+			public void onItemClick(AdapterView<?> parent, View view,
+					int position, long id) {
+				String index = "" + (innerposition + 1) + (position + 1);
+				InnerDetailsFragment innerFragment = new InnerDetailsFragment(
+						Integer.parseInt(index));
+				FragmentTransaction transaction = getChildFragmentManager()
+						.beginTransaction();
+
+				// Replace whatever is in the fragment_container view with this
+				// fragment,
+				// and add the transaction to the back stack so the user can
+				// navigate back
+				transaction.replace(R.id.content_frame_inner, innerFragment);
+				transaction.addToBackStack(null);
+				transaction
+						.setTransition(FragmentTransaction.TRANSIT_ENTER_MASK);
+
+				// Commit the transaction
+				transaction.commit();
+			}
+		});
 
 		return view;
 	}
