@@ -1,15 +1,10 @@
 package com.app.nafld.views;
 
-import java.util.Locale;
-
-import android.app.SearchManager;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.v4.app.ActionBarDrawerToggle;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
@@ -18,17 +13,13 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBar.Tab;
 import android.support.v7.app.ActionBar.TabListener;
 import android.support.v7.app.ActionBarActivity;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.app.nafld.R;
 import com.app.nafld.adapters.TabsPagerAdapter;
@@ -47,7 +38,7 @@ public class HomeActivity extends ActionBarActivity implements TabListener, onIt
     private ActionBarDrawerToggle mDrawerToggle;
     private CharSequence mDrawerTitle;
     private CharSequence mTitle;
-    private String[] mPlanetTitles;
+    private String[] mDrawerTitles;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -56,7 +47,7 @@ public class HomeActivity extends ActionBarActivity implements TabListener, onIt
 		setContentView(R.layout.activity_home);
 		
 		mTitle = mDrawerTitle = getTitle();
-        mPlanetTitles = getResources().getStringArray(R.array.planets_array);
+		mDrawerTitles = getResources().getStringArray(R.array.navigation_drawer_array);
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
         
@@ -64,7 +55,7 @@ public class HomeActivity extends ActionBarActivity implements TabListener, onIt
         mDrawerLayout.setDrawerShadow(R.drawable.drawer_shadow, GravityCompat.START);
         // set up the drawer's list view with items and click listener
         mDrawerList.setAdapter(new ArrayAdapter<String>(this,
-                R.layout.drawer_list_item, mPlanetTitles));
+                R.layout.drawer_list_item, mDrawerTitles));
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
         
      // ActionBarDrawerToggle ties together the the proper interactions
@@ -219,7 +210,7 @@ public class HomeActivity extends ActionBarActivity implements TabListener, onIt
     }
     
     private void selectItem(int position) {
-        // update the main content by replacing fragments
+        /*// update the main content by replacing fragments
         Fragment fragment = new PlanetFragment();
         Bundle args = new Bundle();
         args.putInt(PlanetFragment.ARG_PLANET_NUMBER, position);
@@ -230,7 +221,7 @@ public class HomeActivity extends ActionBarActivity implements TabListener, onIt
 
         // update selected item and title, then close the drawer
         mDrawerList.setItemChecked(position, true);
-        setTitle(mPlanetTitles[position]);
+        setTitle(mPlanetTitles[position]);*/
         mDrawerLayout.closeDrawer(mDrawerList);
     }
     
@@ -263,7 +254,7 @@ public class HomeActivity extends ActionBarActivity implements TabListener, onIt
     /**
      * Fragment that appears in the "content_frame", shows a planet
      */
-    public static class PlanetFragment extends Fragment {
+    /*public static class PlanetFragment extends Fragment {
         public static final String ARG_PLANET_NUMBER = "planet_number";
 
         public PlanetFragment() {
@@ -283,6 +274,6 @@ public class HomeActivity extends ActionBarActivity implements TabListener, onIt
             getActivity().setTitle(planet);
             return rootView;
         }
-    }
+    }*/
 
 }

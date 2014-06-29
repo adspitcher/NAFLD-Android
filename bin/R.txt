@@ -17,7 +17,7 @@ int array naflds_diagonosis_array 0x7f0c0007
 int array naflds_pathogenesis_array 0x7f0c0006
 int array naflds_positionpaper_array 0x7f0c0004
 int array naflds_treatment_array 0x7f0c0008
-int array planets_array 0x7f0c000e
+int array navigation_drawer_array 0x7f0c000e
 int array socities_array 0x7f0c000f
 int array tabs_array 0x7f0c0000
 int attr actionBarDivider 0x7f01000f

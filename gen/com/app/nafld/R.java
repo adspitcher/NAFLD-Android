@@ -30,7 +30,7 @@ public final class R {
         public static final int naflds_pathogenesis_array=0x7f0c0006;
         public static final int naflds_positionpaper_array=0x7f0c0004;
         public static final int naflds_treatment_array=0x7f0c0008;
-        public static final int planets_array=0x7f0c000e;
+        public static final int navigation_drawer_array=0x7f0c000e;
         public static final int socities_array=0x7f0c000f;
         public static final int tabs_array=0x7f0c0000;
     }
