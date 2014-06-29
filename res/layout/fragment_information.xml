@@ -4,13 +4,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
-     <ListView
-        android:id="@+id/listview_information"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:drawSelectorOnTop="true" >
 
-    </ListView>
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@color/white_background_color">
+
+        <ListView
+            android:id="@+id/listview_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white_background_color"
+            android:drawSelectorOnTop="true" >
+
+        </ListView>
+    </FrameLayout>
 
 </LinearLayout>

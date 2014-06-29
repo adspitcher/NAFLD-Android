@@ -63,7 +63,7 @@ public class InformationFragment extends Fragment{
 
 					// Replace whatever is in the fragment_container view with this fragment,
 					// and add the transaction to the back stack so the user can navigate back
-					transaction.replace(R.id.container_information, authorsFragment);
+					transaction.replace(R.id.content_frame, authorsFragment);
 					transaction.addToBackStack(null);
 					transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
 
@@ -79,5 +79,6 @@ public class InformationFragment extends Fragment{
 
 		return view;
 	}
+	
 
 }

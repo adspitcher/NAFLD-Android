@@ -4,10 +4,18 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
 
+    <FrameLayout
+        android:id="@+id/content_frame_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@color/white_background_color">
     <ListView
         android:id="@+id/listview_authors"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        android:background="@color/white_background_color"
+        android:drawSelectorOnTop="true" >
     </ListView>
+    </FrameLayout>
 
 </LinearLayout>
