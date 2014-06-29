@@ -59,7 +59,7 @@ public class InformationFragment extends Fragment{
 				case Constants.INDEX_AUTHORS:{
 					//activityCallback.onItemClicked(view, position);
 					AuthorsFragment authorsFragment = new AuthorsFragment();
-					FragmentTransaction transaction = getFragmentManager().beginTransaction();
+					FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
 
 					// Replace whatever is in the fragment_container view with this fragment,
 					// and add the transaction to the back stack so the user can navigate back
