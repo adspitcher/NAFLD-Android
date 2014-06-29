@@ -15,7 +15,7 @@
         android:paddingRight="@dimen/items_horizontal_padding"
         android:paddingTop="@dimen/items_vertical_padding"
         android:text="@string/text_dummy"
-        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:typeface="serif" />
 
 </LinearLayout>

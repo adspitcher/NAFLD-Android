@@ -17,13 +17,14 @@
      limitations under the License.
 -->
 
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <style name="Theme.Ab" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="android:actionBarItemBackground">@drawable/selectable_background_ab</item>
         <item name="android:popupMenuStyle">@style/PopupMenu.Ab</item>
         <item name="android:dropDownListViewStyle">@style/DropDownListView.Ab</item>
         <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Ab</item>
+        <item name="android:actionBarTabTextStyle">@style/ActionBarTabTextStyle.Ab</item>
         <item name="android:actionDropDownStyle">@style/DropDownNav.Ab</item>
         <item name="android:actionBarStyle">@style/ActionBar.Solid.Ab</item>
         <item name="android:actionModeBackground">@drawable/cab_background_top_ab</item>
@@ -56,6 +57,12 @@
     
     <style name="OverFlow" parent="@android:style/Widget.Holo.ActionButton.Overflow">
         <item name="android:src">@drawable/ic_action_core_overflow</item>
+    </style>
+    
+    <style name="ActionBarTabTextStyle.Ab"
+           parent="@style/Widget.AppCompat.ActionBar.TabText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white_background_color</item>
     </style>
 
 </resources>

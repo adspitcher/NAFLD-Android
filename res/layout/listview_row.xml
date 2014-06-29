@@ -15,7 +15,7 @@
         android:paddingRight="@dimen/content_horizontal_margin"
         android:paddingTop="@dimen/content_vertical_margin"
         android:text="@string/app_name"
-        android:textAppearance="?android:attr/textAppearanceSmall"
-        android:typeface="serif" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:typeface="serif"/>
 
 </LinearLayout>

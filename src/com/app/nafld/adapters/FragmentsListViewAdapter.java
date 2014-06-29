@@ -2,6 +2,9 @@ package com.app.nafld.adapters;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.Color;
+import android.graphics.drawable.GradientDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -15,6 +18,8 @@ public class FragmentsListViewAdapter extends ArrayAdapter<String>{
 	Context context;
 	int layoutResourceId;
 	String[] mostPopularItem = null;
+	//String[] colors = new String[2];
+	//String color = "#FF0000";
 
 	public FragmentsListViewAdapter(Context context,
 			int layoutResourceId, String[] objects) {
@@ -22,6 +27,8 @@ public class FragmentsListViewAdapter extends ArrayAdapter<String>{
 		this.context = context;
 		this.layoutResourceId = layoutResourceId;
 		this.mostPopularItem = objects;
+		//colors[0] = "#0095CD";
+		//colors[1] = "#FF0000";
 	}
 
 	@Override
@@ -35,16 +42,6 @@ public class FragmentsListViewAdapter extends ArrayAdapter<String>{
 			convertView = layout_inflator.inflate(R.layout.listview_row,
 					null);
 
-			/*int firstrow_color = convertView.getResources().getColor(R.color.color_listview_firstrow_item);
-			int secondrow_color = convertView.getResources().getColor(R.color.color_listview_secondrow_item);
-			//check for odd or even to set alternate colors to the row background
-			if(position % 2 == 0){  
-				convertView.setBackgroundColor(firstrow_color);
-			}
-			else {
-				convertView.setBackgroundColor(secondrow_color);
-			}*/
-
 			holder.dataCell_text = (TextView) convertView
 					.findViewById(R.id.textview_rowitem);
 
@@ -52,6 +49,21 @@ public class FragmentsListViewAdapter extends ArrayAdapter<String>{
 		} else {
 			holder = (ViewHolder) convertView.getTag();
 		}
+		
+		/*holder.border_textview = (TextView) convertView
+				.findViewById(R.id.border_textview);
+		GradientDrawable gradDB = (GradientDrawable) holder.border_textview
+				.getBackground();
+		if(position%2==0){
+			color = colors[0];
+		}else
+			color = colors[1];
+		
+		gradDB.setColor(Color.parseColor(color));
+		// Log.v("Adapter", "Set color if===>"+color);
+		holder.border_textview.setTag(R.id.textview_background_color, color);
+		holder.border_textview.setBackgroundDrawable(gradDB);*/
+
 
 		String item = mostPopularItem[position];
 		holder.dataCell_text.setText(item);
@@ -64,6 +76,7 @@ public class FragmentsListViewAdapter extends ArrayAdapter<String>{
 	 */
 	static class ViewHolder {
 		private TextView dataCell_text;
+		//private TextView border_textview;
 	}
 
 }
