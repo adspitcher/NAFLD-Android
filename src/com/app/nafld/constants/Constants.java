@@ -24,5 +24,14 @@ public class Constants {
 	public static final int INDEX_DRUG_DETAILS_2 = 2;
 	public static final int INDEX_DRUG_DETAILS_3 = 3;
 	public static final int INDEX_DRUG_DETAILS_4 = 4;
+	
+	/**
+     * Shared Preference Name
+     */
+    public static final String DATABASE_PREF_NAME = "nafldLoginPrefName";
+    public static final String TEXT_DATABASE_ACCESS_VALUE_DEFAULT = "DatabaseKeyDoesNotExist";
+    
+    public static final String TEXT_ACCESSTOKEN = "accesstoken";
+    public static final String TEXT_USERLOGGEDIN = "userloggedin";
 
 }

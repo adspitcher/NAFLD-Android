@@ -166,5 +166,7 @@ non-obese and 21.6\u0025 and 18.8\u0025 in obese males and females, respectively
     <string name="text_email">email</string>
     <string name="text_submit">Submit</string>
     <string name="text_register">Register</string>
+    <string name="text_forgotpassword">Forgot Password</string>
+    <string name="text_forgotpwd_details">An email with instructions to reset password has been sent to your registered email address. Please follow the instructions in email to reset your password.</string>
 
 </resources>
