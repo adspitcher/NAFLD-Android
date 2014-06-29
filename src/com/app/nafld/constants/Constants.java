@@ -12,5 +12,7 @@ public class Constants {
 	public static final int INDEX_COPYRIGHT = 0;
 	public static final int INDEX_AUTHORS = 1;
 	public static final int INDEX_SOCIETIES = 2;
+	
+	public static final int INDEX_SOCIETIES_ARRAY = 21;
 
 }

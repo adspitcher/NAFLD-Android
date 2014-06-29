@@ -59,7 +59,6 @@ public class InformationFragment extends Fragment{
 				case Constants.INDEX_COPYRIGHT:
 					break;
 				case Constants.INDEX_AUTHORS:{
-					//activityCallback.onItemClicked(view, position);
 					AuthorsFragment authorsFragment = new AuthorsFragment();
 					FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
 
@@ -73,7 +72,19 @@ public class InformationFragment extends Fragment{
 					transaction.commit();
 				}
 					break;
-				case Constants.INDEX_SOCIETIES:
+				case Constants.INDEX_SOCIETIES:{
+					InnerFragment innerFragment = new InnerFragment(Constants.INDEX_SOCIETIES_ARRAY);
+					FragmentTransaction transaction = getChildFragmentManager().beginTransaction();
+
+					// Replace whatever is in the fragment_container view with this fragment,
+					// and add the transaction to the back stack so the user can navigate back
+					transaction.replace(R.id.content_frame, innerFragment);
+					transaction.addToBackStack(null);
+					transaction.setTransition(FragmentTransaction.TRANSIT_ENTER_MASK);
+
+					// Commit the transaction
+					transaction.commit();
+				}
 					break;
 				}
 			}

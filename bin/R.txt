@@ -19,6 +19,7 @@ int array naflds_pathogenesis_array 0x7f0c0006
 int array naflds_positionpaper_array 0x7f0c0004
 int array naflds_treatment_array 0x7f0c0008
 int array planets_array 0x7f0c000f
+int array socities_array 0x7f0c0010
 int array tabs_array 0x7f0c0000
 int attr actionBarDivider 0x7f01000f
 int attr actionBarItemBackground 0x7f010010
@@ -502,6 +503,7 @@ int string abc_searchview_description_voice 0x7f0a0008
 int string abc_shareactionprovider_share_with 0x7f0a000c
 int string abc_shareactionprovider_share_with_application 0x7f0a000b
 int string action_accept 0x7f0a001e
+int string action_close 0x7f0a0024
 int string action_continue 0x7f0a0010
 int string action_download 0x7f0a001f
 int string action_search 0x7f0a0023

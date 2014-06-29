@@ -154,5 +154,13 @@ photocopying, recording, or any information storage and retrieval system, withou
     <string name="drawer_open">Open navigation drawer</string>
     <string name="drawer_close">Close navigation drawer</string>
     <string name="action_search">Search</string>
+    <string name="action_close">Close</string>
+    
+    <string-array name="socities_array">
+    	<item>Indian National Association for Study of the Liver</item>
+  		<item>Endocrine Society of India</item>
+  		<item>Association of Physicians of India</item>
+  		<item>Indian College of Cardiology</item>
+  	</string-array>
   	
 </resources>

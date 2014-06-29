@@ -32,6 +32,7 @@ public final class R {
         public static final int naflds_positionpaper_array=0x7f0c0004;
         public static final int naflds_treatment_array=0x7f0c0008;
         public static final int planets_array=0x7f0c000f;
+        public static final int socities_array=0x7f0c0010;
         public static final int tabs_array=0x7f0c0000;
     }
     public static final class attr {
@@ -1406,6 +1407,7 @@ containing a value of this type.
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
         public static final int action_accept=0x7f0a001e;
+        public static final int action_close=0x7f0a0024;
         public static final int action_continue=0x7f0a0010;
         public static final int action_download=0x7f0a001f;
         public static final int action_search=0x7f0a0023;

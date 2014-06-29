@@ -12,7 +12,8 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/Theme.Ab" android:logo="@drawable/splash">
+        android:logo="@drawable/splash"
+        android:theme="@style/Theme.Ab" >
         <activity
             android:name="com.app.nafld.views.SplashActivity"
             android:label="@string/app_name" >
@@ -22,22 +23,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".views.LoginActivity"
-            android:label="@string/text_signin"></activity>
-        <activity android:name=".views.ConditionsActivity"
+        <activity
+            android:name=".views.LoginActivity"
+            android:label="@string/text_signin" >
+        </activity>
+        <activity
+            android:name=".views.ConditionsActivity"
             android:label="@string/text_termsconditions"
-            android:parentActivityName=".views.LoginActivity">
+            android:parentActivityName=".views.LoginActivity" >
             <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".views.LoginActivity" /></activity>
-        <activity android:name=".views.HomeActivity"
-            android:label="@string/text_nafldms"></activity>
-        <activity android:name=".views.AlgorithmActivity"
-            android:label="@string/text_algorithm"
-            android:parentActivityName=".views.HomeActivity">
-            <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".views.HomeActivity" /></activity>
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.LoginActivity" />
+        </activity>
+        <activity
+            android:name=".views.HomeActivity"
+            android:label="@string/text_nafldms" >
+        </activity>
+        <activity
+            android:name=".views.AlgorithmActivity"
+            android:logo="@drawable/ic_action_content_remove" >
+        </activity>
     </application>
 
 </manifest>

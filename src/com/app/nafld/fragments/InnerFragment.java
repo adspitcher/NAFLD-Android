@@ -44,35 +44,44 @@ public class InnerFragment extends Fragment {
 
 		ListView listView_items = (ListView) view
 				.findViewById(R.id.listview_inneritems);
-		
+
 		String[] items = null;
 
-		switch(position){
-		case Constants.INDEX_POSITION_PAPER:{
+		switch (position) {
+		case Constants.INDEX_POSITION_PAPER: {
 			items = view.getResources().getStringArray(
 					R.array.naflds_positionpaper_array);
 		}
-		break;
-		case Constants.INDEX_POSITION_DEFINITIONS:{
-			items = view.getResources().getStringArray(R.array.naflds_definitions_array);
+			break;
+		case Constants.INDEX_POSITION_DEFINITIONS: {
+			items = view.getResources().getStringArray(
+					R.array.naflds_definitions_array);
 		}
-		break;
-		case Constants.INDEX_POSITION_PATHOGENESIS:{
-			items = view.getResources().getStringArray(R.array.naflds_pathogenesis_array);
+			break;
+		case Constants.INDEX_POSITION_PATHOGENESIS: {
+			items = view.getResources().getStringArray(
+					R.array.naflds_pathogenesis_array);
 		}
-		break;
-		case Constants.INDEX_POSITION_DIAGNOSIS:{
-			items = view.getResources().getStringArray(R.array.naflds_diagonosis_array);
+			break;
+		case Constants.INDEX_POSITION_DIAGNOSIS: {
+			items = view.getResources().getStringArray(
+					R.array.naflds_diagonosis_array);
 		}
-		break;
-		case Constants.INDEX_POSITION_TREATMENT:{
-			items = view.getResources().getStringArray(R.array.naflds_treatment_array);
+			break;
+		case Constants.INDEX_POSITION_TREATMENT: {
+			items = view.getResources().getStringArray(
+					R.array.naflds_treatment_array);
 		}
-		break;
-		case Constants.INDEX_POSITION_CONCLUSION:{
-			items = view.getResources().getStringArray(R.array.naflds_definitions_array);
+			break;
+		case Constants.INDEX_POSITION_CONCLUSION: {
+			items = view.getResources().getStringArray(
+					R.array.naflds_definitions_array);
 		}
-		break;
+			break;
+		case Constants.INDEX_SOCIETIES_ARRAY: {
+			items = view.getResources().getStringArray(R.array.socities_array);
+		}
+			break;
 		}
 
 		FragmentsListViewAdapter adapter = new FragmentsListViewAdapter(
