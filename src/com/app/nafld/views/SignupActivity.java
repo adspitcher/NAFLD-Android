@@ -2,9 +2,11 @@ package com.app.nafld.views;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
+import android.text.method.PasswordTransformationMethod;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -26,6 +28,10 @@ public class SignupActivity extends ActionBarActivity{
 
 		ActionBar actionBar = getSupportActionBar();
 		actionBar.setDisplayHomeAsUpEnabled(true);
+		
+		EditText password = (EditText) findViewById(R.id.edittext_signup_password);
+		password.setTypeface(Typeface.SERIF);
+		password.setTransformationMethod(new PasswordTransformationMethod());
 
 		btn_submit = (TextView) findViewById(R.id.btn_submit);
 		btn_submit.setOnClickListener(new OnClickListener() {
@@ -36,6 +42,7 @@ public class SignupActivity extends ActionBarActivity{
 				screenChangeIntent = new Intent(SignupActivity.this,
 						ConditionsActivity.class);
 				SignupActivity.this.startActivity(screenChangeIntent);
+				SignupActivity.this.finish();
 			}
 		});
 

@@ -223,6 +223,11 @@ public class HomeActivity extends ActionBarActivity implements TabListener, onIt
         mDrawerList.setItemChecked(position, true);
         setTitle(mPlanetTitles[position]);*/
         mDrawerLayout.closeDrawer(mDrawerList);
+        Intent screenChangeIntent = null;
+		screenChangeIntent = new Intent(HomeActivity.this,
+				LoginActivity.class);
+		HomeActivity.this.startActivity(screenChangeIntent);
+		HomeActivity.this.finish();
     }
     
     @Override
