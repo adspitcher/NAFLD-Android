@@ -18,5 +18,11 @@ public class Constants {
 	public static final int INDEX_POSITION_PAPER_DETAIL_1 = 11;
 	public static final int INDEX_POSITION_PAPER_DETAIL_2 = 12;
 	public static final int INDEX_POSITION_PAPER_DETAIL_3 = 13;
+	
+	public static final int INDEX_DRUG_DETAILS_0 = 0;
+	public static final int INDEX_DRUG_DETAILS_1 = 1;
+	public static final int INDEX_DRUG_DETAILS_2 = 2;
+	public static final int INDEX_DRUG_DETAILS_3 = 3;
+	public static final int INDEX_DRUG_DETAILS_4 = 4;
 
 }

@@ -1,12 +1,9 @@
 package com.app.nafld.fragments;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.util.Log;
-import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,23 +16,6 @@ import com.app.nafld.adapters.FragmentsListViewAdapter;
 import com.app.nafld.constants.Constants;
 
 public class InformationFragment extends Fragment{
-	
-	private onItemClickListener activityCallback;
-
-	public interface onItemClickListener{
-		public void onItemClicked(View view, int position);
-	}
-	
-	@Override
-	public void onAttach(Activity activity) {
-		 super.onAttach(activity);
-	        try {
-	        	activityCallback = (onItemClickListener) activity;
-	        } catch (ClassCastException e) {
-	            throw new ClassCastException(activity.toString()
-	                    + " must implement onItemClickListener");
-	        }
-	}
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,

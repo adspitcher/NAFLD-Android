@@ -46,6 +46,18 @@ photocopying, recording, or any information storage and retrieval system, withou
         <item>Antioxidants</item>
         <item>Pentoxifylline</item>
     </string-array>
+
+    <string name="h2_Ursodeoxycholicacid">        Ursodeoxycholic acid is the non-hepatotoxic epimer of chenodeoxycholic acid. Ursodeoxycholic acid replaces endogenous bile acids, which are potential hepatotoxins, has membrane stabilizing and cytoprotective effects on mitochondria as well as immunological effects. 
+It is believed that by decreasing bile acids, UDCA protects against hepatocyte injury and decreases oxidative stress in patients with NAFLD. Ursodeoxycholic acid has been used in the treatment of some hepatobiliary diseases for nearly two decades.</string>
+    <string name="h2_metformin">In a randomized controlled study, when metformin was added to a lipid and calorie-restricted diet, it significantly reduced IR and mean hepatic aminotransferase levels, but no definite improvement was observed on liver histology. 
+        These data were not confirmed in an observational, open-label study of 1 year of metformin treatment. Hepatic aminotransferase levels improved during the initial 3 months, along with improved insulin sensitivity, but then returned to pretreatment levels and histology did not change.</string>
+    <string name="h2_thiazolidinediones">In a 1-year study by Pomrat et al, pioglitazone improved insulin sensitivity and hepatic aminotransferase levels, reduced liver size and hepatic fat content, and improved histology. 
+        In another controlled study, all patients treated with pioglitazone and vitamin E had normalized hepatic aminotransferase levels, but interestingly this was also the case with patients treated with vitamin E alone. However, the combination therapy had more impact on histology as well as metabolic disturbances (hyperinsulinemia, IR, high FFA levels), and metabolic changes predicted the improvement in hepatic steatosis.</string>
+    <string name="h2_antioxidants">Of all the anti-oxidant drugs, vitamin E (α-tocopherol) is the best studied and is recommended in nondiabetic patients with biopsy-proven NASH.
+In a study by Lavin, vitamin E (400–1200 IU/day orally) was given for 4–10 months and led to a significant improvement in hepatic aminotransferases.
+A study reported the results of treatment with α-tocopherol in children with NAFLD (The Treatment of Nonalcoholic Fatty Liver Disease in Children [TONIC] trial). But in the trial, it was observed that neither vitamin E nor metformin was superior to placebo in attaining the primary outcome of sustained reduction in ALT level in patients with pediatric NAFLD.</string>
+    <string name="h2_pentoxifylline">Pentoxifylline is a methylxanthine compound inhibiting the production of cytokines (mainly tumor necrosis factor-α) involved in the pathogenesis of NASH. In a pilot study, Adams et al tested its effectiveness in NASH patients in 2004. Twenty patients of NASH were administered pentoxifylline for 12 months. It was observed that aminotransferase levels among patients with NASH96 improved but it also cautioned for more trials to overcome the side-effect profile. In a study conducted in India by Satapathy et al, nine patients (mean age 31.6 ± 7.2 years) of histologically proven.</string>
+
     <string-array name="naflds_array">
         <item>NEED FOR THE POSITION PAPER ON NON-ALCOHOLIC FATTY LIVER DISEASE AND METABOLIC SYNDROME FROM INDIA</item>
         <item>DEFINITIONS AND SPECTRUM</item>
@@ -146,7 +158,7 @@ non-obese and 21.6\u0025 and 18.8\u0025 in obese males and females, respectively
         <item>Association of Physicians of India</item>
         <item>Indian College of Cardiology</item>
     </string-array>
-    
+
     <string name="text_rememberme">Remember me</string>
     <string name="text_forgotpwd"><u>Forgot password?</u></string>
     <string name="text_create_account">New user? Register</string>

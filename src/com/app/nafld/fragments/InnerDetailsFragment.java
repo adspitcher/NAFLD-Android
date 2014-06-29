@@ -45,15 +45,37 @@ public class InnerDetailsFragment extends Fragment {
 		String detailsText = "";
 		switch (detailsID) {
 		case Constants.INDEX_POSITION_PAPER_DETAIL_1: {
-			detailsText = getResources().getString(R.string.h2_increasing_obesity);
+			detailsText = getResources().getString(
+					R.string.h2_increasing_obesity);
 		}
 			break;
 		case Constants.INDEX_POSITION_PAPER_DETAIL_2: {
-			detailsText = getResources().getString(R.string.h2_insulin_resistence);
+			detailsText = getResources().getString(
+					R.string.h2_insulin_resistence);
 		}
 			break;
 		case Constants.INDEX_POSITION_PAPER_DETAIL_3: {
 			detailsText = getResources().getString(R.string.h2_NTFLD);
+		}
+			break;
+		case Constants.INDEX_DRUG_DETAILS_0: {
+			detailsText = getResources().getString(R.string.h2_Ursodeoxycholicacid);
+		}
+			break;
+		case Constants.INDEX_DRUG_DETAILS_1: {
+			detailsText = getResources().getString(R.string.h2_metformin);
+		}
+			break;
+		case Constants.INDEX_DRUG_DETAILS_2: {
+			detailsText = getResources().getString(R.string.h2_thiazolidinediones);
+		}
+			break;
+		case Constants.INDEX_DRUG_DETAILS_3: {
+			detailsText = getResources().getString(R.string.h2_antioxidants);
+		}
+			break;
+		case Constants.INDEX_DRUG_DETAILS_4: {
+			detailsText = getResources().getString(R.string.h2_pentoxifylline);
 		}
 			break;
 		}

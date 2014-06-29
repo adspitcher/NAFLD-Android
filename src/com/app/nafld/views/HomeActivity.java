@@ -23,12 +23,9 @@ import android.widget.ListView;
 
 import com.app.nafld.R;
 import com.app.nafld.adapters.TabsPagerAdapter;
-import com.app.nafld.constants.Constants;
 import com.app.nafld.fragments.AlgorithmsFragment.onAlgorithmClickListener;
-import com.app.nafld.fragments.AuthorsFragment;
-import com.app.nafld.fragments.InformationFragment.onItemClickListener;
 
-public class HomeActivity extends ActionBarActivity implements TabListener, onItemClickListener, onAlgorithmClickListener{
+public class HomeActivity extends ActionBarActivity implements TabListener, onAlgorithmClickListener{
 	
 	private ViewPager viewPager;
 	private TabsPagerAdapter mAdapter;
@@ -138,26 +135,6 @@ public class HomeActivity extends ActionBarActivity implements TabListener, onIt
 	public void onTabUnselected(Tab arg0, FragmentTransaction arg1) {
 		// TODO Auto-generated method stub
 		
-	}
-
-	@Override
-	public void onItemClicked(View view, int position) {
-		switch(position){
-		case Constants.INDEX_AUTHORS:{
-			AuthorsFragment authorsFragment = new AuthorsFragment();
-			FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-
-			// Replace whatever is in the fragment_container view with this fragment,
-			// and add the transaction to the back stack so the user can navigate back
-			transaction.replace(R.id.pager, authorsFragment);
-			transaction.addToBackStack(null);
-			transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-
-			// Commit the transaction
-			transaction.commit();
-		}
-		break;
-		}
 	}
 
 	@Override
