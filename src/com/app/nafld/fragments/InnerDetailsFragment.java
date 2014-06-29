@@ -78,6 +78,10 @@ public class InnerDetailsFragment extends Fragment {
 			detailsText = getResources().getString(R.string.h2_pentoxifylline);
 		}
 			break;
+		case Constants.INDEX_COPYRIGHT_DETAILS:{
+			detailsText = getResources().getString(R.string.copyright_details);
+		}
+		break;
 		}
 
 		TextView detailsTxtView = (TextView) view

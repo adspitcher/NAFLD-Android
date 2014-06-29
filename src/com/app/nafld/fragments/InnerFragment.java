@@ -96,23 +96,27 @@ public class InnerFragment extends Fragment {
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
-				String index = "" + (innerposition + 1) + (position + 1);
-				InnerDetailsFragment innerFragment = new InnerDetailsFragment(
-						Integer.parseInt(index));
-				FragmentTransaction transaction = getChildFragmentManager()
-						.beginTransaction();
+				if (innerposition != Constants.INDEX_SOCIETIES_ARRAY) {
+					String index = "" + (innerposition + 1) + (position + 1);
+					InnerDetailsFragment innerFragment = new InnerDetailsFragment(
+							Integer.parseInt(index));
+					FragmentTransaction transaction = getChildFragmentManager()
+							.beginTransaction();
 
-				// Replace whatever is in the fragment_container view with this
-				// fragment,
-				// and add the transaction to the back stack so the user can
-				// navigate back
-				transaction.replace(R.id.content_frame_inner, innerFragment);
-				transaction.addToBackStack(null);
-				transaction
-						.setTransition(FragmentTransaction.TRANSIT_ENTER_MASK);
+					// Replace whatever is in the fragment_container view with
+					// this
+					// fragment,
+					// and add the transaction to the back stack so the user can
+					// navigate back
+					transaction
+							.replace(R.id.content_frame_inner, innerFragment);
+					transaction.addToBackStack(null);
+					transaction
+							.setTransition(FragmentTransaction.TRANSIT_ENTER_MASK);
 
-				// Commit the transaction
-				transaction.commit();
+					// Commit the transaction
+					transaction.commit();
+				}
 			}
 		});
 

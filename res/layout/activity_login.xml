@@ -24,7 +24,9 @@
             android:hint="@string/text_username"
             android:inputType="none"
             android:textColor="@color/heading_text_color"
-            android:typeface="serif" />
+            android:typeface="serif" >
+            <requestFocus />
+        </EditText>
 
         <EditText
             android:id="@+id/edittext_password"
@@ -41,7 +43,7 @@
             android:textColor="@color/heading_text_color"
             android:typeface="serif" >
 
-            <requestFocus />
+            
         </EditText>
 
         <CheckBox

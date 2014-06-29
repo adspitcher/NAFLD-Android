@@ -25,6 +25,8 @@ public class Constants {
 	public static final int INDEX_DRUG_DETAILS_3 = 3;
 	public static final int INDEX_DRUG_DETAILS_4 = 4;
 	
+	public static final int INDEX_COPYRIGHT_DETAILS = 31;
+	
 	/**
      * Shared Preference Name
      */

@@ -24,7 +24,9 @@ photocopying, recording, or any information storage and retrieval system, withou
 \n\nTo the fullest extent of the law, neither the Publisher nor the authors, contributors, or editors, assume any liability for any injury and/or damage to persons or property as a manner of products liability, negligence or otherwise, or from any use or operation of any methods, products, instructions, or ideas contained in the material herein.
 \n\nAlthough all advertising material is expected to conform to ethical (medical) standards, inclusion in this publication does not constitute a guarantee or endorsement of the quality or value of such product or of the claims made of it by its manufacturer.
 \n\n<b>Please consult full prescribing information before issuing prescription for any product mentioned in this publication.</b></string>
-
+	<string name="copyright_details">A division of \n
+Reed Elsevier India Private Limited. \n\n© 2014 Reed Elsevier India Private Limited. All rights reserved. \n\nNo part of this publication may be reproduced or transmitted in any form or by any means, electronic or mechanical, including
+photocopying, recording, or any information storage and retrieval system, without permission in writing from the Publisher.</string>
     <string-array name="tabs_array">
         <item>Information</item>
         <item>NAFLD&amp;ms</item>
@@ -120,14 +122,14 @@ non-obese and 21.6\u0025 and 18.8\u0025 in obese males and females, respectively
         <item>Dr. Vivek Saraswat</item>
     </string-array>
     <string-array name="authors_departments_array">
-        <item>Department of Hepatology,</item>
-        <item>Department of Gastroenterology,</item>
-        <item>Department of Gastroenterology,</item>
+        <item>Department of Hepatology</item>
+        <item>Department of Gastroenterology</item>
+        <item>Department of Gastroenterology</item>
     </string-array>
     <string-array name="authors_qualification_array">
-        <item>Postgraduate Institute of Medical Education and Research,</item>
-        <item>S.C.B. Medical College,</item>
-        <item>Sanjay Gandhi Postgraduate Institute of Medical Sciences,</item>
+        <item>Postgraduate Institute of Medical Education and Research</item>
+        <item>S.C.B. Medical College</item>
+        <item>Sanjay Gandhi Postgraduate Institute of Medical Sciences</item>
     </string-array>
     <string-array name="authors_location_array">
         <item>Chandigarh</item>
