@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical" >
+    
+    <EditText
+        android:id="@+id/edittext_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/items_horizontal_margin"
+        android:layout_marginRight="@dimen/items_horizontal_margin"
+        android:layout_marginTop="@dimen/items_vertical_margin"
+        android:drawableLeft="@drawable/ic_action_social_person"
+        android:ems="10"
+        android:hint="@string/text_name"
+        android:inputType="none"
+        android:textColor="@color/heading_text_color"
+        android:typeface="serif" >
+
+    <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/edittext_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/items_horizontal_margin"
+        android:layout_marginRight="@dimen/items_horizontal_margin"
+        android:layout_marginTop="@dimen/items_vertical_margin"
+        android:drawableLeft="@drawable/ic_action_content_email"
+        android:ems="10"
+        android:hint="@string/text_email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/heading_text_color"
+        android:typeface="serif" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/edittext_signup_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/items_horizontal_margin"
+        android:layout_marginRight="@dimen/items_horizontal_margin"
+        android:layout_marginTop="@dimen/items_vertical_margin"
+        android:drawableLeft="@drawable/ic_action_device_access_accounts"
+        android:ems="10"
+        android:hint="@string/text_password"
+        android:inputType="textPassword"
+        android:textColor="@color/heading_text_color"
+        android:typeface="serif" >
+
+    </EditText>
+    
+    <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/items_horizontal_margin"
+            android:layout_marginRight="@dimen/items_horizontal_margin"
+            android:layout_marginTop="@dimen/items_vertical_margin"
+            android:background="@drawable/button_custom"
+            android:text="@string/text_submit"
+            android:textColor="@color/white_background_color"
+            android:typeface="serif" />
+
+</LinearLayout>

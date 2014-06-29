@@ -43,6 +43,12 @@
             android:name=".views.AlgorithmActivity"
             android:logo="@drawable/ic_action_content_remove" >
         </activity>
+        <activity android:name=".views.SignupActivity"
+            android:label="@string/text_register"
+            android:parentActivityName=".views.LoginActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".views.LoginActivity" /></activity>
     </application>
 
 </manifest>

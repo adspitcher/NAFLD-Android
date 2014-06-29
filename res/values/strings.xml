@@ -153,5 +153,13 @@ non-obese and 21.6\u0025 and 18.8\u0025 in obese males and females, respectively
         <item>Association of Physicians of India</item>
         <item>Indian College of Cardiology</item>
     </string-array>
+    
+    <string name="text_rememberme">Remember me</string>
+    <string name="text_forgotpwd"><u>Forgot password?</u></string>
+    <string name="text_create_account">New user? Register</string>
+    <string name="text_name">name</string>
+    <string name="text_email">email</string>
+    <string name="text_submit">Submit</string>
+    <string name="text_register">Register</string>
 
 </resources>

@@ -5,50 +5,96 @@
     android:background="@color/white_background_color"
     android:orientation="vertical" >
 
-    <EditText
-        android:id="@+id/edittext_username"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/edittext_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/items_horizontal_margin"
+            android:layout_marginRight="@dimen/items_horizontal_margin"
+            android:layout_marginTop="@dimen/items_vertical_margin"
+            android:drawableLeft="@drawable/ic_action_social_person"
+            android:drawablePadding="@dimen/text_border_horizontal_padding"
+            android:ems="10"
+            android:hint="@string/text_username"
+            android:inputType="none"
+            android:textColor="@color/heading_text_color"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/edittext_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/items_horizontal_margin"
+            android:layout_marginRight="@dimen/items_horizontal_margin"
+            android:layout_marginTop="@dimen/items_vertical_margin"
+            android:drawableLeft="@drawable/ic_action_device_access_accounts"
+            android:drawablePadding="@dimen/text_border_horizontal_padding"
+            android:ems="10"
+            android:hint="@string/text_password"
+            android:inputType="textPassword"
+            android:textColor="@color/heading_text_color"
+            android:typeface="serif" >
+
+            <requestFocus />
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/checkbox_rememberme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/items_vertical_margin"
+            android:layout_marginLeft="@dimen/items_horizontal_margin"
+            android:layout_marginRight="@dimen/items_horizontal_margin"
+            android:layout_marginTop="@dimen/items_vertical_margin"
+            android:text="@string/text_rememberme"
+            android:textColor="@color/heading_text_color"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/items_horizontal_margin"
+            android:layout_marginRight="@dimen/items_horizontal_margin"
+            android:layout_marginTop="@dimen/items_vertical_margin"
+            android:background="@drawable/button_custom"
+            android:text="@string/text_signin"
+            android:textColor="@color/white_background_color"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/textview_forgotpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/items_horizontal_margin"
+            android:layout_marginTop="@dimen/items_vertical_margin"
+            android:gravity="center_vertical"
+            android:text="@string/text_forgotpwd"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/blue_background_color"
+            android:typeface="serif" />
+
+    </LinearLayout>
+    
+    <TextView
+        android:id="@+id/textview_createaccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/items_horizontal_margin"
-        android:layout_marginRight="@dimen/items_horizontal_margin"
-        android:layout_marginTop="@dimen/items_vertical_margin"
-        android:drawableLeft="@drawable/ic_action_social_person"
-        android:drawablePadding="@dimen/text_border_horizontal_padding"
-        android:ems="10"
-        android:hint="@string/text_username"
-        android:inputType="none"
-        android:textColor="@color/heading_text_color"
-        android:typeface="serif" >
-
-    <requestFocus />
-    </EditText>
-
-    <EditText
-        android:id="@+id/edittext_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/items_horizontal_margin"
-        android:layout_marginRight="@dimen/items_horizontal_margin"
-        android:layout_marginTop="@dimen/items_vertical_margin"
-        android:drawableLeft="@drawable/ic_action_device_access_accounts"
-        android:drawablePadding="@dimen/text_border_horizontal_padding"
-        android:ems="10"
-        android:hint="@string/text_password"
-        android:inputType="textPassword"
-        android:textColor="@color/heading_text_color"
-        android:typeface="serif" >
-
-    </EditText>
-
-    <Button
-        android:id="@+id/btn_login"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/items_horizontal_margin"
-        android:layout_marginRight="@dimen/items_horizontal_margin"
-        android:layout_marginTop="@dimen/items_vertical_margin"
         android:background="@drawable/button_custom"
-        android:text="@string/text_signin"
+        android:drawableRight="@drawable/ic_action_navigation_next_item"
+        android:gravity="center_vertical"
+        android:paddingBottom="@dimen/text_border_vertical_padding"
+        android:paddingLeft="@dimen/text_border_horizontal_padding"
+        android:paddingRight="@dimen/text_border_horizontal_padding"
+        android:paddingTop="@dimen/text_border_vertical_padding"
+        android:text="@string/text_create_account"
+        android:textAppearance="?android:attr/textAppearanceSmall"
         android:textColor="@color/white_background_color"
         android:typeface="serif" />
 
